@@ -1,0 +1,12 @@
+body {
+  overflow: hidden;
+}
+
+h3{
+  margin-top: 40px;
+}
+
+.shape {
+  position: absolute;
+  cursor: pointer;
+}

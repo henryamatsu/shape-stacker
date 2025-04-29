@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shapes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-highest-z=<%= details.highestZ %>>
+  <h1>Shapes</h1>
+  <button>New Shape</button>
+  <% for(var i=0; i<shapes.length; i++) {%>
+    <div class="shape" data-id=<%= shapes[i].id%> style="background-color: hsl(from <%=  shapes[i].color %>h s l /60%); border: 5px solid <%= shapes[i].color%>; width: <%= shapes[i].size %>; height: <%= shapes[i].size %>; top: <%= shapes[i].top %>; left: <%= shapes[i].left %>; border-radius: <%= shapes[i].borderRadius %>; z-index: <%= shapes[i].zIndex %>"></div>
+  <% } %>
+  <script src="main.js"></script>
+
+</body>
+</html>
