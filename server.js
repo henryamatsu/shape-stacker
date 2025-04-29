@@ -11,7 +11,7 @@ const url = `mongodb+srv://henryamatsu:Vw0Aml0jLB6fOc1A@cluster0.aejyj1h.mongodb
 
 const dbName = "personal-express-app";
 
-app.listen(3000, () => {
+app.listen(8080, () => {
     MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
         if(error) {
             throw error;
